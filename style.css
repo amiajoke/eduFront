@@ -1,0 +1,88 @@
+@font-face {
+  font-family: Poppins;
+  src: url("Poppins-Regular.ttf");
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  /* height: 100%; */
+}
+
+body {
+  font-family: Poppins;
+  margin: 0;
+  padding: 0 35px;
+  /* height: 100%; */
+}
+header {
+  /* --header-top: 1.3em; */
+  padding: 1.3em 0;
+  font-size: large;
+  /* font-weight: 700; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.side {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+}
+.navigation {
+  display: inline;
+  position: relative;
+}
+
+header a {
+  margin: 0 2em;
+  text-decoration: none;
+  color: black;
+}
+
+header .contacts {
+  margin: 0;
+  padding: 6px 15px;
+  border: 2px solid black;
+  border-radius: 35px;
+}
+
+.main {
+  text-align: center;
+  height: calc(100vh - 75px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sonechka {
+  margin: 0 auto;
+  margin-bottom: 75px;
+}
+
+.sonechka h1 {
+  font-size: 7em;
+}
+
+.sonechka p {
+    text-align:center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* header > .contacts {
+  margin: calc(var(--header-top) - 0.4em) 0;
+
+  position: absolute;
+  top: 0;
+  right: 40px;
+
+  text-decoration: none;
+  color: black;
+
+  border: 2px solid black;
+  border-radius: 50px;
+  padding: 0.4em 20px;
+} */
