@@ -1,71 +1,78 @@
 @font-face {
-  font-family: Poppins;
-  src: url("Poppins-Regular.ttf");
-}
-
-* {
-  margin: 0;
+    font-family: Poppins;
+    src: url("Poppins-Regular.ttf");
 }
 
 html {
-  /* height: 100%; */
+    background-color: #141414;
+    /* height: 100%; */
 }
 
 body {
-  font-family: Poppins;
-  margin: 0;
-  padding: 0 35px;
-  /* height: 100%; */
+    margin: 0;
+    padding: 0 100px;
+    font-family: Poppins;
+    /* height: 100%; */
 }
+
+
+
+.navigation {
+    display: inline;
+    position: relative;
+}
+
+.navigation > a {
+    margin: 0 2em;
+    text-decoration: none;
+    color: white;
+}
+
 header {
-  /* --header-top: 1.3em; */
-  padding: 1.3em 0;
-  font-size: large;
-  /* font-weight: 700; */
-  display: flex;
-  justify-content: space-between;
+    display:flex;
+    justify-content: space-between;
+    padding: 1.5em 0;
+    font-size: large;
+    /* text-decoration: none; */
 }
+
+/* header a {
+    margin: 0 2em;
+    text-decoration: none;
+    color: aliceblue;
+} */
 
 .side {
-  display: inline-block;
-  width: 150px;
-  text-align: right;
-}
-.navigation {
-  display: inline;
-  position: relative;
+    display: inline;
+    width: 150px;
+    text-align: right;
 }
 
-header a {
-  margin: 0 2em;
-  text-decoration: none;
-  color: black;
-}
-
-header .contacts {
-  margin: 0;
-  padding: 6px 15px;
-  border: 2px solid black;
-  border-radius: 35px;
+.side > .contacts {
+    text-decoration: none;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    padding: 0.4em 20px;
 }
 
 .main {
-  text-align: center;
-  height: calc(100vh - 75px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    text-align: center;
+    height: calc(100vh - 82px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .sonechka {
   margin: 0 auto;
-  margin-bottom: 75px;
+  color: whitesmoke;
+  /* margin-bottom: 30px; */
 }
 
 .sonechka h1 {
   font-size: 7em;
-  color: black;
-  /* transition: all 1000ms linear; */
+  margin: 0;
 }
 
 .sonechka p {
@@ -78,17 +85,31 @@ header .contacts {
   transition: all 300ms ease-out;
 }
 
-/* header > .contacts {
-  margin: calc(var(--header-top) - 0.4em) 0;
+/* .sonechka {
+    
+    margin-bottom: 75px;
+}
 
-  position: absolute;
-  top: 0;
-  right: 40px;
+.sonechka > .undersonechka {
+    padding: 0 350px;
+}
 
-  text-decoration: none;
-  color: black;
+.sonechka > h1 {
+    font-size: 8em;
+    margin: 0;
+    margin-bottom: 15px;
+}  */
+/* 
+header > .contacts {
+    margin: calc(var(--header-top) - 0.4em) 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 30px;
+    text-decoration: none;
+    color: blueviolet;
+    border: 2px solid blueviolet;
+    border-radius: 20px;
+    padding: 0.4em 10px;
 
-  border: 2px solid black;
-  border-radius: 50px;
-  padding: 0.4em 20px;
 } */
