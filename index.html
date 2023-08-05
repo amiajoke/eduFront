@@ -14,7 +14,7 @@
         <a href="https://youtube.com">MORE</a>
       </div>
       <div class="side">
-        <a class="contacts" href="https://youtube.com">CONTACTS</a>
+        <a class="contacts">CONTACTS</a>
       </div>
     </header>
     <div class="main">
@@ -26,5 +26,42 @@
         </p>
       </div>
     </div>
+    <script>
+      let son = document.querySelector(".sonechka > h1");
+      let par = document.querySelector(".sonechka > p");
+
+      son.style.transform = "scale(0.1)";
+      const son_step = 0.3;
+      let son_scale = 0.1;
+
+      let son_interv = setInterval(() => {
+        son_scale += son_step;
+        if (son_scale > 1) {
+          clearInterval(son_interv);
+          return;
+        }
+        son.style.transform = `scale(${son_scale})`;
+      }, 500);
+
+      setTimeout(() => {
+        par.style.opacity = "100%";
+        par.style.transform = "translate(0, 0)";
+      }, 500 * 3);
+
+      //   let son = document.querySelector(".sonechka > h1");
+      //   let btn = document.querySelector(".side > a");
+      //   btn.addEventListener("click", cut_h1)
+      //   son.style.color = "black";
+      //   let h1_len = son.textContent.length;
+
+      //   function cut_h1() {
+      //     if (!h1_len--) return;
+
+      //     setTimeout(() => {
+      //         son.textContent = son.textContent.slice(0, h1_len);
+      //         requestAnimationFrame(cut_h1);
+      //     }, 100);
+      //   }
+    </script>
   </body>
 </html>
